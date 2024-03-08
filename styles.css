@@ -5,6 +5,11 @@
     margin: 2vh 3vw;
 }
 
+.navbar h1:hover, .navbar li:hover {
+    color: #6528e0;
+    transition: color 0.1s ease;
+}
+
 .nav_logo {
     display: flex;
     align-items: center;
@@ -39,6 +44,10 @@
 .nav_links ul {
     list-style-type: none;
     display: flex;
+}
+
+.nav_links a {
+    text-decoration: none;
 }
 
 .nav_links li {
