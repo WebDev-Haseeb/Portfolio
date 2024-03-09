@@ -7,6 +7,19 @@ body {
     line-height: 2;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #712df8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bc9bff;
+    border-radius: 5px;
+}
+  
 .navbar {
     display: flex;
     justify-content: space-between;
