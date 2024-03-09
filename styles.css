@@ -43,7 +43,7 @@ body {
 }
 
 .nav_logo span {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     color: #333;
     font-size: large;
     text-transform: uppercase;
@@ -82,7 +82,7 @@ body {
 }
 
 .nav_links li {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     color: #333;
     font-size: small;
     text-transform: uppercase;
@@ -109,7 +109,7 @@ Header {
 }
 
 .heading h1 {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 900;
@@ -120,7 +120,7 @@ Header {
 .sub_headings {
     margin-top: 3vh;
     text-align: center;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 
     font-size: 1.2rem;
     font-weight: 500;
@@ -135,7 +135,7 @@ Header {
 
 .projects_button button {
     margin-top: 7vh;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     background-color: #713ae0;
     color: white;
@@ -154,3 +154,38 @@ Header {
     transition: padding 0.2s ease-in;
     box-shadow: 0 15px 25px 0 rgba(0,0,0,0.15);
 }
+
+/* Header_Links Design  */
+.header_links {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 1vw;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header_links img {
+  width: 2vw;
+  margin-top: 0.5vh;
+  margin-bottom: auto;
+}
+
+.header_links a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5vh 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.header_links img:hover {
+    width: 2.3vw;
+    transition: width 0.3 ease-in;
+}
+
+/* Responsiveness for navbar and header.... */
