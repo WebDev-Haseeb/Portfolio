@@ -188,9 +188,11 @@ Header {
     transition: width 0.3 ease-in;
 }
 
-/* HamBurgur Menu Design */
+
+
+/* HamBurgur Menu Design - (193-269) */ 
 .hamburger_container {
-    display: none; /* Initially hide hamburger button for larger screens */
+    display: none;
   }
   
   .hamburger {
@@ -203,7 +205,7 @@ Header {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth animation */
+    transition: all 0.3s ease;
   }
 
   .hamburger.active span:nth-child(1) {
@@ -227,6 +229,51 @@ Header {
     margin-bottom: 5px;
     transition: all 0.3s ease;
   }
+
+  .mob_nav_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease;
+    width: 100%;
+    z-index: 98;
+
+    background-color: #b36dfe;
+  }
+
+  .mob_nav_links a {
+    text-decoration: none;
+  }
+
+  .mob_nav_links li {
+    list-style-type: none;
+    margin-bottom: 3vh;
+    padding: 1vh 20vw;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    border:  2px solid #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .mob_nav_links ul:nth-child(1) {
+    margin-top: 15vh;
+  }
+
+  .mob_nav_links li:hover {
+    background-color: #b36dfe;
+    transition: background-color 0.3s ease-in;
+  }
+
+  .mob_nav_links.active {
+    height: 90vh;
+  }
+
 
 /* Responsiveness for navbar and header.... */
 @media (max-width: 920px) {
