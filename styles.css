@@ -98,7 +98,7 @@ body {
 Header {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 95vh;
     background: url(./images/header_bg.svg);
     background: linear-gradient(to right, rgba(240, 238, 238, 0.8), rgba(242, 238, 238, 0.8)), url(/images/header_bg.svg);
 }
@@ -111,10 +111,14 @@ Header {
 .heading h1 {
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     letter-spacing: 3px;
     text-align: center;
+
+    line-height: 1.2;
+    margin-left: 2vw;
+    margin-right: 2VW;
 }
 
 .sub_headings {
@@ -122,10 +126,12 @@ Header {
     text-align: center;
     font-family: "Open Sans", sans-serif;
 
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 1px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
+    margin-left: 2vw;
+    margin-right: 2VW;
 }
 
 .projects_button {
@@ -274,32 +280,47 @@ Header {
     height: 90vh;
   }
 
-
-/* Responsiveness for navbar and header.... */
-@media (max-width: 920px) {
-    .heading h1 {
-        font-size: 3rem;
-        letter-spacing: 2px;
-        font-weight: 800;
-    }
-
-    .sub_headings p {
-        font-size: medium;
-        letter-spacing: 0;
-    }
-
-    .projects_button button {
-        font-size: large;
-        letter-spacing: 1px;
-        padding: 2vh 3vw;
-    }
-
-    .header_links img {
-        width: 2.5vw;
-    }
+  .home-hero__mouse-scroll-cont {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-@media (max-width:720px) {
+.mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mouse::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite;
+}
+
+@keyframes wheel {
+    100% {
+    opacity: 0;
+    top: 27px;
+}
+}
+
+
+/* Responsiveness for navbar and header.... */
+@media (max-width:900px) {
     .header_links {
         display: none;
     }
@@ -307,23 +328,28 @@ Header {
 
 @media (max-width:700px) {
     Header {
-        height: 80vh;
+        height: 60vh;
     }
+
+    .header_content {
+        top: 25%;
+    }
+
     .heading h1 {
         font-size: 2.5rem;
         letter-spacing: 1px;
         font-weight: 800;
     }
 
-    .sub_headings p {
-        font-size: small;
+    .sub_headings {
+        font-size: 0.8rem;
         letter-spacing: 0;
     }
 
     .projects_button button {
         font-size: small;
         letter-spacing: 0px;
-        padding: 1.5vh 2.5vw;
+        padding: 1vh 2.5vw;
     }
 
     .nav_links {
@@ -332,5 +358,59 @@ Header {
 
     .hamburger_container {
         display: flex;
+    }
+
+    .home-hero__mouse-scroll-cont {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    Header {
+        height: 50vh;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+        letter-spacing: 0px;
+        font-weight: 800;
+    }
+
+    .sub_headings {
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+    }
+
+    .projects_button button {
+        font-size: x-small;
+        letter-spacing: 0px;
+        padding: 1vh 2.5vw;
+    }
+}
+
+@media (max-width:400px) {
+    Header {
+        height: 40vh;
+    }
+
+    .header_content {
+        top: 20%;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        font-weight: 800;
+    }
+
+    .sub_headings {
+        font-size: 0.5rem;
+        letter-spacing: 0px;
+    }
+
+    .projects_button button {
+        font-size: xx-small;
+        letter-spacing: 0px;
+        padding: 1vh 2.5vw;
     }
 }
