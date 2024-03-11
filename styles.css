@@ -9,16 +9,21 @@ body {
 
 /* ScrollBar Design */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #712df8;
+    background: #7e7e7e;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #9866fd;
-    border-radius: 5px;
+    background: #8f5bf9;
+    /* border-radius: 5px; */
+}
+
+/* Selection color setting... */
+::selection {
+    background: #8f5bf9;
 }
 
 
