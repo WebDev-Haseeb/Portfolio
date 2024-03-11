@@ -320,7 +320,7 @@ Header {
     100% {
     opacity: 0;
     top: 27px;
-}
+    }
 }
 
 .about_container {
@@ -333,8 +333,6 @@ Header {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin: 0vh 5vw;
 }
 
 .about_heading h2 {
@@ -396,7 +394,7 @@ Header {
 }
 
 .about_sub p {
-    margin-top: 2vh;
+    margin-top: 4vh;
     font-family: "Open Sans", sans-serif;
     text-align: left;
 
@@ -407,10 +405,39 @@ Header {
     line-height: 2;
 }
 
+.skills_container {
+    margin-top: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills_container .skills_skill {
+    font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+
+    border-radius: 5px;
+    padding: 1vh 2vw;
+    margin: 1.5vh 2vw;
+    margin-left: 0;
+    background-color: #dfdede;
+    color: #5a5959;
+}
+
 
 
 
 /* Responsiveness for navbar and header.... */
+@media (max-width:1000px) {
+    .about_sub {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_sub .skills_heading {
+        margin-top: 5vh;
+    }
+}
+
 @media (max-width:900px) {
     .header_links {
         display: none;
@@ -453,6 +480,44 @@ Header {
 
     .home-hero__mouse-scroll-cont {
         display: none;
+    }
+
+    .about_container {
+        padding: 5vh 0vw;
+    }
+
+    .about_heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .about_sub h3 {
+        font-family: "Open Sans", sans-serif;
+        text-align: left;
+    
+        font-size: 1.2rem;
+        font-weight: 800;
+        text-wrap: wrap;
+    }
+
+    .about_heading span {
+        font-size: 0.7rem;
+    }
+
+    .about_sub p {
+        font-size: 0.8rem;
+    }
+
+    .skills_container .skills_skill {
+        font-family: "Open Sans",sans-serif;
+        font-weight: bold;
+        font-size: small;
+    
+        border-radius: 5px;
+        padding: 1vh 2vw;
+        margin: 1.5vh 2vw;
+        margin-left: 0;
+        background-color: #dfdede;
+        color: #5a5959;
     }
 }
 
