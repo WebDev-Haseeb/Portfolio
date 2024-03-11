@@ -424,6 +424,33 @@ Header {
 }
 
 
+.contact_button {
+    display: flex;
+    justify-content: left;
+}
+
+.contact_button button {
+    margin-top: 3vh;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    background-color: #713ae0;
+    color: white;
+    font-size: large;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+
+    padding: 1.7vh 2.7vw;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+}
+
+.contact_button button:hover {
+    padding: 1.5vh 2.5vw;
+    transition: padding 0.2s ease-in;
+    box-shadow: 0 15px 25px 0 rgba(0,0,0,0.15);
+}
+
 
 
 /* Responsiveness for navbar and header.... */
@@ -518,6 +545,16 @@ Header {
         margin-left: 0;
         background-color: #dfdede;
         color: #5a5959;
+    }
+
+    .contact_button button {
+        font-size: small;
+        letter-spacing: 1px;
+        padding: 1.5vh 2.5vw;
+    }
+
+    .contact_button button:hover {
+        padding: 1.3vh 2.3vw;
     }
 }
 
