@@ -328,7 +328,7 @@ Header {
 .section_heading_container {
     padding: 10vh 0vw;
     height: fit-content;
-    background-color: rgb(247, 244, 244);
+    background-color: #fafafa;
 }
 
 .section_heading {
@@ -464,7 +464,59 @@ Header {
     background-color: #ffffff;
 }
 
+.certificates_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5vh 2vw;
+}
 
+.certificate img {
+    width: 30vw;
+    margin: 0vh 1vw;
+    border-radius: 10px;
+}
+
+.certificate h3 {
+    margin-top: 2vh;
+    font-family: "Open Sans", sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.certificate img:hover {
+    width: 33vw;
+    transition: width 0.3s ease-in;
+}
+
+.certificate_button {
+    display: flex;
+    justify-content: center;
+}
+
+.certificate_button button {
+    margin-top: 1vh;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    background-color: #713ae0;
+    color: white;
+    font-size: x-small;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    padding: 1.2vh 2.5vw;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+}
+
+.certificate_button button:hover {
+    padding: 1vh 2.2vw;
+    transition: padding 0.1s ease-in;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+}
 
 
 /* Responsiveness for navbar and header.... */
