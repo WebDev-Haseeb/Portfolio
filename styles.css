@@ -323,19 +323,22 @@ Header {
     }
 }
 
-.about_container {
+
+/* Shared Code for all the containers below Header */
+.section_heading_container {
     padding: 10vh 0vw;
     height: fit-content;
     background-color: rgb(247, 244, 244);
 }
 
-.about_heading {
+.section_heading {
+    margin: 0vh 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.about_heading h2 {
+.section_heading h2 {
     font-family: "Open Sans",sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
@@ -343,7 +346,7 @@ Header {
     letter-spacing: 1px;
 }
 
-.about_heading h2::after {
+.section_heading h2::after {
     content: '';
     position: absolute;
     display: flex;
@@ -356,7 +359,7 @@ Header {
     background-color: #7e3efe;
 }
 
-.about_heading span {
+.section_heading span {
     text-align: center;
     font-family: "Open Sans", sans-serif;
     margin: auto;
@@ -367,6 +370,10 @@ Header {
     text-wrap: wrap;
     margin-top: 7vh;
 }
+
+/* till here...  */
+
+
 
 .about_sub {
     margin-top: 8vh;
@@ -425,12 +432,12 @@ Header {
 
 
 .contact_button {
+    margin-top: 3vh;
     display: flex;
     justify-content: left;
 }
 
 .contact_button button {
-    margin-top: 3vh;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     background-color: #713ae0;
@@ -450,6 +457,13 @@ Header {
     transition: padding 0.2s ease-in;
     box-shadow: 0 15px 25px 0 rgba(0,0,0,0.15);
 }
+
+
+/* Certifications Section  */
+.certfications_container {
+    background-color: #ffffff;
+}
+
 
 
 
@@ -509,12 +523,16 @@ Header {
         display: none;
     }
 
-    .about_container {
+    .section_heading_container {
         padding: 5vh 0vw;
     }
 
-    .about_heading h2 {
+    .section_heading h2 {
         font-size: 1.5rem;
+    }
+
+    .section_heading span {
+        font-size: 0.7rem;
     }
 
     .about_sub h3 {
@@ -524,10 +542,6 @@ Header {
         font-size: 1.2rem;
         font-weight: 800;
         text-wrap: wrap;
-    }
-
-    .about_heading span {
-        font-size: 0.7rem;
     }
 
     .about_sub p {
