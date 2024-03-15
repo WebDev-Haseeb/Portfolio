@@ -554,7 +554,7 @@ Header {
     font-family: "Open Sans", sans-serif;
     text-align: left;
 
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     text-wrap: wrap;
     letter-spacing: 0.2px;
@@ -700,7 +700,7 @@ Header {
     }
 
     .section_heading span {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     .about_sub h3 {
@@ -770,6 +770,10 @@ Header {
 
     .certificate_button button:hover {
         padding: 1.1vh 2.3vw;
+    }
+
+    .project_details p {
+        font-size: 0.8rem;
     }
 }
 
