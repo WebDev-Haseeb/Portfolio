@@ -459,6 +459,7 @@ Header {
     flex-direction: row;
     justify-content: center;
     margin: 10vh 2vw;
+    margin-bottom: 0vh;
 }
 
 .certificate img {
@@ -597,12 +598,54 @@ Header {
     .about_sub .skills_heading {
         margin-top: 5vh;
     }
+
 }
 
 @media (max-width:900px) {
     .header_links {
         display: none;
     }
+
+    .project_image {
+        width: 80%;
+        margin-bottom: 4vh;
+    }
+
+    .project_details {
+        width: 100%;
+    }
+
+    .project_details  h3 {
+        text-align: center;
+    }
+
+    .project_details p {
+        text-align: center;
+        margin: 0vh 5vw;
+    }
+
+    .little_lemon {
+        flex-direction: column;
+    }
+
+    .portfolio {
+        flex-direction: column-reverse;
+    }
+
+    .live_button {
+        justify-content: center;
+    }
+
+    .live_button button {
+        padding: 1.5vh 7vw;
+    }
+    
+    .live_button button:hover {
+        padding: 1.4vh 6.8vw;
+        transition: padding 0.2s ease-in;
+        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+
 }
 
 @media (max-width:700px) {
@@ -631,9 +674,9 @@ Header {
     }
 
     .header_projects_button button {
-        font-size: small;
+        font-size: medium;
         letter-spacing: 1px;
-        padding: 1.4vh 3vw;
+        padding: 1.5vh 3.5vw;
     }
 
     .nav_links {
@@ -742,14 +785,8 @@ Header {
     }
 
     .sub_headings {
-        font-size: 0.6rem;
-        letter-spacing: 0.5px;
-    }
-
-    .header_projects_button button {
-        font-size: small;
+        font-size: 0.8rem;
         letter-spacing: 1px;
-        padding: 1.2vh 2.5vw;
     }
 
     .certificate img {
@@ -787,13 +824,13 @@ Header {
     }
 
     .sub_headings {
-        font-size: 0.5rem;
-        letter-spacing: 0px;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
     }
 
     .header_projects_button button {
-        font-size: xx-small;
-        letter-spacing: 0px;
+        font-size: x-small;
+        letter-spacing: 1px;
         padding: 1vh 2.5vw;
     }
 }
