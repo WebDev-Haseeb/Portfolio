@@ -520,7 +520,6 @@ Header {
 .projects_content {
     background-color: #fafafa;
     padding: 0vh 5vw;
-    padding-bottom: 8vh;
 }
 
 .project_row {
@@ -593,6 +592,77 @@ Header {
 }
 
 
+/* Footer Section Styling... */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+.footer-upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+    padding-bottom: 5vh;
+}
+
+.footer-upper h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+#footer_socials_heading {
+    font-size: medium;
+}
+
+.footer_details {
+    margin-right: 3vw;
+}
+
+.footer_details p {
+    font-family: "Open Sans", sans-serif;
+    font-size: small;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+.footer_socials {
+    margin-right: 3vw;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_links img {
+    width: 1.2rem;
+    margin: 0.3vw;
+}
+
+.footer-lower {
+    padding: 3vh 5vw;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-lower p {
+    font-family: "Open Sans", sans-serif;
+    font-size: small;
+    opacity: 70%;
+}
+
+.footer-lower a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
 /* Responsiveness for navbar and header.... */
 @media (max-width:1000px) {
     .about_sub {
@@ -652,6 +722,7 @@ Header {
     }
 
 }
+
 
 @media (max-width:700px) {
 
@@ -780,6 +851,28 @@ Header {
     .project_details p {
         font-size: 0.8rem;
     }
+}
+
+
+
+@media (max-width:600px) {
+    .footer-upper {
+        flex-direction: column;
+    }
+
+    .footer_socials {
+        margin-top: 4vh;
+    }
+
+    .footer_links {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer_links img {
+        margin: 1vw;
+    }
+
 }
 
 @media (max-width:500px) {
