@@ -25,6 +25,11 @@ body {
 }
 
 
+/* Making the scroll behaviour smooth...  */
+html {
+    scroll-behavior: smooth;
+}
+
 /* NavBar Styling */
 .navbar {
     display: flex;
