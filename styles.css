@@ -260,7 +260,7 @@ Header {
 .header_links {
     position: absolute;
     left: 0%;
-    top: 50%;
+    top: 39%;
 
     background-color: #fff;
     display: flex;
@@ -274,7 +274,6 @@ Header {
 .header_links a {
     text-decoration: none;
     color: inherit;
-    padding: 0.5vh 0;
     transition: color 0.2s ease-in-out;
 }
 
@@ -634,7 +633,7 @@ footer {
 }
 
 .footer_socials {
-    margin-right: 3vw;
+    margin-right: 2vw;
 }
 
 .footer_links {
