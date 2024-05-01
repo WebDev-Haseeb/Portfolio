@@ -6,3 +6,5 @@ hamburger.addEventListener('click', function() {
     mobLinks.classList.toggle('active');
     scrollY = hidden;
 });
+
+
