@@ -30,6 +30,33 @@ html {
     scroll-behavior: smooth;
 }
 
+/* top button styling.  */
+.top {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    background-color: #6528e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 12;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top img {
+    width: 60%;
+    height: 60%;
+}
+
+.top:hover {
+    background-color: #713ae0;
+}
+
 /* NavBar Styling */
 .navbar {
     display: flex;
